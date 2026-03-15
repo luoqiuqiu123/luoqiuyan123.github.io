@@ -1,16 +1,24 @@
 project:
   type: website
-  output-dir: _site
 
 website:
-  title: "我的个人主页"
+  title: "罗秋艳 | 个人主页"
   navbar:
     left:
-      - href: index.qmd
-        text: 首页
-  theme: cosmo
+      - text: "首页"
+        href: index.qmd
+      - text: "教育背景"
+        href: education.qmd
+      - text: "关于我"
+        href: about.qmd
+    background: "#2c3e50"
+    foreground: "#ffffff"
+    search: true
+    pinned: true
 
 format:
   html:
-    toc: false
+    theme: cosmo
     css: styles.css
+    toc: false
+    page-layout: full

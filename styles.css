@@ -1,29 +1,39 @@
-/* 标题居中+颜色 */
-h1, h2, h3 {
-  text-align: center;
-  color: #2c3e50; /* 深蓝色，和示例风格一致 */
-}
-
-/* 头像圆形+居中 */
-img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%; /* 头像变圆形 */
-  border: 2px solid #eee; /* 加浅边框 */
-}
-
-/* 页面整体排版 */
-body {
-  max-width: 800px; /* 内容宽度，不撑满屏幕 */
-  margin: 0 auto; /* 页面居中 */
+/* 全局容器：限制宽度 + 左对齐 */
+.page-container {
+  max-width: 800px;
+  margin: 0 auto 0 20px;
   padding: 20px;
-  font-family: 微软雅黑, Arial, sans-serif; /* 适配中文 */
-  line-height: 1.8; /* 行间距更易读 */
 }
 
-/* 列表样式优化 */
-ul, ol {
-  max-width: 600px;
-  margin: 0 auto; /* 列表居中 */
-  padding-left: 40px;
+/* 导航栏整体靠左 */
+.navbar {
+  justify-content: flex-start !important;
+  padding-left: 20px !important;
+}
+
+/* 隐藏页面顶部的标题（可选） */
+h1#title {
+  display: none !important;
+}
+
+/* 所有标题左对齐 */
+h1, h2, h3, h4, h5, h6 {
+  text-align: left !important;
+  color: #2c3e50;
+}
+
+/* 正文、列表左对齐 */
+body, p, ul, ol {
+  text-align: left !important;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* 分隔线样式 */
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 20px 0;
 }
