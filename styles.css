@@ -1,0 +1,29 @@
+/* 标题居中+颜色 */
+h1, h2, h3 {
+  text-align: center;
+  color: #2c3e50; /* 深蓝色，和示例风格一致 */
+}
+
+/* 头像圆形+居中 */
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; /* 头像变圆形 */
+  border: 2px solid #eee; /* 加浅边框 */
+}
+
+/* 页面整体排版 */
+body {
+  max-width: 800px; /* 内容宽度，不撑满屏幕 */
+  margin: 0 auto; /* 页面居中 */
+  padding: 20px;
+  font-family: 微软雅黑, Arial, sans-serif; /* 适配中文 */
+  line-height: 1.8; /* 行间距更易读 */
+}
+
+/* 列表样式优化 */
+ul, ol {
+  max-width: 600px;
+  margin: 0 auto; /* 列表居中 */
+  padding-left: 40px;
+}

@@ -1,0 +1,16 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "我的个人主页"
+  navbar:
+    left:
+      - href: index.qmd
+        text: 首页
+  theme: cosmo
+
+format:
+  html:
+    toc: false
+    css: styles.css
